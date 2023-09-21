@@ -23,7 +23,7 @@ while(t--){
     int temp=1;
         for(int i=0; i<a.size(); i++){
         temp=temp*a[i];}
-    cout<<temp;
+    cout<<temp<<endl;
     }
     
 }
