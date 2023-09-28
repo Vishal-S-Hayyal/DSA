@@ -1,0 +1,1 @@
+cout<<"Ans is "<<ans;

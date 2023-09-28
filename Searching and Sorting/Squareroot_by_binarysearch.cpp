@@ -29,5 +29,16 @@ int main() {
 int n;
 cin>>n;
 int ans=find(n);
-cout<<"Ans is "<<ans;
+// cout<<"Ans is "<<ans;
+int precision;
+cin>>precision;
+double finalans=ans;
+double step=0.1;
+for(int i=0; i<precision; i++){
+    for(double j=finalans; j*j<=n; j+step){
+        finalans=j;
+    }
+    step=step/10;
+}
+cout<<"Final ans is "<<finalans<<endl;
 }
