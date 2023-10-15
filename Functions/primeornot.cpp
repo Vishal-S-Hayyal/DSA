@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-bool iseven(int x){
+bool isprime(int x){
     
     for(int i=2; i<=x/2; i++){
         if(x%i==0){
@@ -16,7 +16,7 @@ int main() {
 int n;
 cout<<"Enter the value of n "<<endl;
 cin>>n;
-bool res=iseven(n);
+bool res=isprime(n);
 if(res){
     cout<<n<<" is a prime number"<<endl;
 }
