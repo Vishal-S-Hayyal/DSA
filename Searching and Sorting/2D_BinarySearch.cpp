@@ -35,7 +35,6 @@ int main() {
         {10, 11, 12}
     };
     int target = 7;
-    
     pair<int, int> ans = search(v, target);
     
     if (ans.first != -1) {
