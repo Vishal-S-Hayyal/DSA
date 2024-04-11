@@ -29,6 +29,21 @@ int pow(int n){
     return ans;
 }
 
+int fibonacci(int n){
+    if(n == 0) return 0;
+    if(n == 1) return 1;
+
+    int ans = fibonacci(n-1)+fibonacci(n-2);
+
+    return ans;
+}
+
+int sum(int n){
+    if(n == 1) return 1;
+
+    int ans = n + sum(n-1);
+    return ans;
+}
 
 int main(){
 ios_base::sync_with_stdio(false);
@@ -36,7 +51,9 @@ cin.tie(NULL);
  
 // cout<<factorial(5)<<endl;
 // Print_Counting(5);
-cout<<pow(10)<<endl;
+// cout<<pow(10)<<endl;
+// cout<<fibonacci(6)<<endl;
+cout<<sum(10)<<endl;
  
 return 0;
 }
